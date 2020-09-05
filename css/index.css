@@ -1,0 +1,26 @@
+.btn {
+  cursor: pointer;
+}
+
+body {
+  color: #34495e;
+}
+
+.clicked {
+  color: red;
+}
+
+.form {
+  display: none;
+}
+/* form을 none 함으로써 입력후 입력창이 안보임 */
+
+.greetings {
+  display: none;
+}
+/* greetings은 입력 후 결과값 */
+
+.showing {
+  display: block;
+}
+/* showing이 form과 greetings classList에 생성/삭제 반복됨 */
