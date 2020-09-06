@@ -1,0 +1,98 @@
+body {
+  color: #ecf0f1;
+  background-size: cover; /* 뭐지? */
+  background-position: center center; /* 뭐지? */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: #ecf0f1;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: #ecf0f1;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+ul span {
+  margin-left: 10px;
+}
+
+body,
+html {
+  overflow: hidden; /* 뭐지? */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+html {
+  background: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.form {
+  display: none;
+}
+/* form을 none 함으로써 입력후 입력창이 안보임 */
+
+.greetings {
+  display: none;
+}
+/* greetings은 입력 후 결과값 */
+
+.showing {
+  display: block;
+  font-size: 25px;
+}
+/* showing이 form과 greetings classList에 생성/삭제 반복됨 */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* z-index 이거 개념 모름 */
+  animation: fadeIn 0.5s linear;
+}
